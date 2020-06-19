@@ -4,7 +4,9 @@
 #'
 #' @param x a phony argument
 #' @param ... other arguments
-#'
+#' @examples
+#' foo(2)
+#' 
 #' @export foo
 #' @export foo.default
 #' @rawNamespace S3method(foo, default)
