@@ -5,11 +5,9 @@
 #' @param x a phony argument
 #' @param ... other arguments
 #' @examples
-#' foo(2)
-#' 
-#' @export foo
-#' @export foo.default
-#' @rawNamespace S3method(foo, default)
+#' foo(2) # should return pi
+#'
+#' @export
 #'
 foo <- function(x, ...) UseMethod("foo", x)
 
@@ -17,4 +15,5 @@ foo <- function(x, ...) UseMethod("foo", x)
 
 #' @rdname foo
 #' @method foo default
+#' @export
 foo.default <- function(x, ...) return(pi)

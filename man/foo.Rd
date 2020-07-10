@@ -17,3 +17,7 @@ foo(x, ...)
 \description{
 Blah
 }
+\examples{
+foo(2) # should return pi
+
+}
